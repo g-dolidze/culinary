@@ -1,0 +1,158 @@
+{
+    "category":{
+        "meat":[
+          {  "id":1,
+          "image":"https://cdn3.vectorstock.com/i/1000x1000/88/87/cow-icon-vector-6818887.jpg",
+            "category":"cow" },
+          {  "id":2,
+          "image":"https://cdn3.vectorstock.com/i/1000x1000/88/87/cow-icon-vector-6818887.jpg",
+            "category":"pork"},
+          {  "id":3,
+          "image":"https://cdn3.vectorstock.com/i/1000x1000/88/87/cow-icon-vector-6818887.jpg",
+            "category":"fish & sea"},
+          {  "id":4,
+          "image":"https://cdn3.vectorstock.com/i/1000x1000/88/87/cow-icon-vector-6818887.jpg",
+            "category":"other"}
+        ],
+        "vegetarian":[
+            {  "id":1,
+          "image":"https://www.howsweeteats.com/wp-content/uploads/2023/12/rosemary-melting-potatoes-10.jpg",
+            "category":"ragu" },
+          {  "id":2,
+          "image":"https://www.howsweeteats.com/wp-content/uploads/2023/12/rosemary-melting-potatoes-10.jpg",
+            "category":"soup"},
+          {  "id":3,
+          "image":"https://www.howsweeteats.com/wp-content/uploads/2023/12/rosemary-melting-potatoes-10.jpg",
+            "category":"salad"},
+          {  "id":4,
+          "image":"https://www.howsweeteats.com/wp-content/uploads/2023/12/rosemary-melting-potatoes-10.jpg",
+            "category":"marinad"}
+            
+        ],
+        "Diserts":[
+            {  "id":1,
+          "image":"https://imageproxy.wolt.com/menu/menu-images/6406fc0ede378c599ce516da/f66a18d6-bcef-11ed-95b2-aafee4190075_tuclzolycgyd7xctnvnf.jpeg",
+            "category":"creamy cake"},
+          {  "id":2,
+          "image":"https://imageproxy.wolt.com/menu/menu-images/6406fc0ede378c599ce516da/f66a18d6-bcef-11ed-95b2-aafee4190075_tuclzolycgyd7xctnvnf.jpeg",
+            "category":"Dry cake"},
+          {  "id":3,
+          "image":"https://imageproxy.wolt.com/menu/menu-images/6406fc0ede378c599ce516da/f66a18d6-bcef-11ed-95b2-aafee4190075_tuclzolycgyd7xctnvnf.jpeg",
+            "category":"no sugar"},
+          {  "id":4,
+          "image":"https://imageproxy.wolt.com/menu/menu-images/6406fc0ede378c599ce516da/f66a18d6-bcef-11ed-95b2-aafee4190075_tuclzolycgyd7xctnvnf.jpeg",
+            "category":"smuthy"}
+            
+        ]
+    },
+    "products":[
+
+        {
+         "id":"1",
+            "image":"https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+            "title":" cake",
+            "time":"30",
+            "category":"cow",
+            "resept":"samel jknefnweo njnewmcw jnefdwemc  ncwencmw kjncw oicjwlkcme w ncoiwsacksa icnwoaclkds jncwnc wjnc s,dcs,mdc kn fm,necnjkedsncs "
+    
+        },
+        {
+         "id":"2",
+            "image":"https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+            "title":"starter ",
+            "time":"30",
+            "category":"cow",
+            "resept":"samel jknefnweo njnewmcw jnefdwemc  ncwencmw kjncw oicjwlkcme w ncoiwsacksa icnwoaclkds jncwnc wjnc s,dcs,mdc kn fm,necnjkedsncs "
+    
+        },
+        {
+         "id":"3",
+            "image":"https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+            "title":"fish",
+            "time":"30",
+            "category":"pork",
+            "resept":"samel jknefnweo njnewmcw jnefdwemc  ncwencmw kjncw oicjwlkcme w ncoiwsacksa icnwoaclkds jncwnc wjnc s,dcs,mdc kn fm,necnjkedsncs "
+    
+        },
+        {
+         "id":"4",
+            "image":"https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+            "title":"vegetarian",
+            "time":"30",
+            "category":"ragu",
+            "resept":"samel jknefnweo njnewmcw jnefdwemc  ncwencmw kjncw oicjwlkcme w ncoiwsacksa icnwoaclkds jncwnc wjnc s,dcs,mdc kn fm,necnjkedsncs "
+    
+        },
+        {
+         "id":"5",
+            "image":"https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+            "title":"drinks",
+            "time":"30",
+            "category":"ragu",
+            "resept":"samel jknefnweo njnewmcw jnefdwemc  ncwencmw kjncw oicjwlkcme w ncoiwsacksa icnwoaclkds jncwnc wjnc s,dcs,mdc kn fm,necnjkedsncs "
+    
+        },
+        {
+         "id":"6",
+            "image":"https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+            "title":"meat",
+            "time":"30",
+            "category":"ragu",
+            "resept":"samel jknefnweo njnewmcw jnefdwemc  ncwencmw kjncw oicjwlkcme w ncoiwsacksa icnwoaclkds jncwnc wjnc s,dcs,mdc kn fm,necnjkedsncs "
+    
+        },
+        {
+         "id":"7",
+            "image":"https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+            "title":"salad",
+            "time":"30",
+            "category":"soup",
+            "resept":"samel jknefnweo njnewmcw jnefdwemc  ncwencmw kjncw oicjwlkcme w ncoiwsacksa icnwoaclkds jncwnc wjnc s,dcs,mdc kn fm,necnjkedsncs "
+    
+        },
+        {
+           "id":"8",
+            "image":"https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+            "title":"soup",
+            "time":"30",
+            "category":"soup",
+            "resept":"samel jknefnweo njnewmcw jnefdwemc  ncwencmw kjncw oicjwlkcme w ncoiwsacksa icnwoaclkds jncwnc wjnc s,dcs,mdc kn fm,necnjkedsncs "
+    
+        },
+        {
+         "id":"9",
+            "image":"https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+            "title":"salad",
+            "time":"30",
+            "category":"salad",
+            "resept":"samel jknefnweo njnewmcw jnefdwemc  ncwencmw kjncw oicjwlkcme w ncoiwsacksa icnwoaclkds jncwnc wjnc s,dcs,mdc kn fm,necnjkedsncs "
+    
+        },
+        {
+           "id":"10",
+            "image":"https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+            "title":"soup",
+            "time":"30",
+            "category":"creamy",
+            "resept":"samel jknefnweo njnewmcw jnefdwemc  ncwencmw kjncw oicjwlkcme w ncoiwsacksa icnwoaclkds jncwnc wjnc s,dcs,mdc kn fm,necnjkedsncs "
+    
+        },
+        {
+         "id":"11",
+            "image":"https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+            "title":"salad",
+            "time":"30",
+            "category":"creamy",
+            "resept":"samel jknefnweo njnewmcw jnefdwemc  ncwencmw kjncw oicjwlkcme w ncoiwsacksa icnwoaclkds jncwnc wjnc s,dcs,mdc kn fm,necnjkedsncs "
+    
+        },
+        {
+           "id":"12",
+            "image":"https://handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg",
+            "title":"soup",
+            "time":"30",
+            "category":"Dry cake",
+            "resept":"samel jknefnweo njnewmcw jnefdwemc  ncwencmw kjncw oicjwlkcme w ncoiwsacksa icnwoaclkds jncwnc wjnc s,dcs,mdc kn fm,necnjkedsncs "
+        }
+    ]
+}
