@@ -11,6 +11,9 @@ import ProfileScreen from './screens/Profile';
 import ChefScreen from './screens/Chef';
 import ReseptScreen from './screens/Resept';
 import CategoryScreen from './screens/Category';
+import RegistrationScreen from './screens/Registration';
+import LoginScreen from "./screens/user/Login"
+import RemindPassScreen from"./screens/user/RemindPass"
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -19,9 +22,12 @@ const HomeStack = () => (
   <Stack.Navigator>
     <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Home' }} />
     <Stack.Screen name="Category" component={CategoryScreen} options={{ title: 'Category' }} />
-    <Stack.Screen name="Profile" component={ProfileScreen} options={{ title: 'Profile' }} />
-    <Stack.Screen name="Settings" component={ChefScreen} options={{ title: 'Settings' }} />
+    <Stack.Screen name="Settings" component={ChefScreen} options={{ title: 'Chef' }} />
     <Stack.Screen name="Resept" component={ReseptScreen} options={{ title: 'Resept' }} />
+    <Stack.Screen name="Profile" component={ProfileScreen} options={{ title: 'Profile' }} />
+    <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Login' }} />
+    <Stack.Screen name="RemindPass" component={RemindPassScreen} options={{ title: 'RemindPass' }} />
+    <Stack.Screen name="Registration" component={RegistrationScreen} options={{ title: 'Registration' }} />
   </Stack.Navigator>
 );
 
