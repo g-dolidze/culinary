@@ -7,9 +7,8 @@ import { FontAwesome } from '@expo/vector-icons';
 export default function Home({navigation}) {
 
   
-  const pushInCategory = (category, id) => {
-    navigation.dispatch(
-      StackActions.push("Category", { categoryTitle: category, otherProp: Data.products })
+  const pushInCategory = (category) => {
+    navigation.dispatch(StackActions.push("Category", { categoryTitle: category, otherProp: Data.products })
     );
   };
 
