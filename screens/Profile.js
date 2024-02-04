@@ -1,23 +1,23 @@
 import React, { useState } from 'react'
-import { View, Text,Image, ScrollView,TouchableOpacity, TextInput, Button } from 'react-native'
+import { View, Text,Image, ScrollView,TouchableOpacity, SafeAreaView,TextInput, Button } from 'react-native'
 import  Data from"../publice/data.json"
+import Login from './user/Login'
 
 const products=Data.products
 
 
-function Profile({id}) {
-  const [isUserAuth, setIsUserAuth]=useState(true)
+function Profile() {
+  const [isUserAuth, setIsUserAuth]=useState(false)
   return(
     
-      isUserAuth ? (userProfile()):(login())
-    
+      isUserAuth ? (userProfile()):(<Login />)
   )
- 
 }
 const userProfile=()=>{
+  
   return ( 
-    <View style={{
-      width:'100%', marginTop:45, alignItems:'center', padding:10
+    <SafeAreaView style={{
+      width:'100%',  alignItems:'center', padding:10
     }}>
       <View style={{flexDirection:'row',justifyContent:'space-around', alignItems:'center', width:"100%",height:100,  backgroundColor:'grey', borderRadius:25, padding:10, position:'relative',zIndex:1}}>
       <Image 
@@ -27,7 +27,7 @@ const userProfile=()=>{
       }}
       />
       <Text style={{fontSize:24, color:'#fff', width:"50%", overflow:"scroll"}} >Giorgi  Dolidze </Text>
-      <Text  style={{position:'absolute', top:10, right:10, zIndex:2}} >log out</Text >
+      <Text  style={{position:'absolute', top:10, right:10, zIndex:2}}>log out</Text >
       </View>
 
 
@@ -77,36 +77,10 @@ const userProfile=()=>{
 
       </ScrollView>
    
-    </View>
+    </SafeAreaView>
   )
 }
-const login=()=>{
-  return(
-    <View style={{
-      flex:1, backgroundColor:"lightGreen",
-      justifyContent:'center', alignItems:'center'
-    }}>
-      <TextInput style={{width:'70%',height:50, paddingHorizontal:5,  borderWidth:2, borderBlockColor:"black", borderRadius:15, marginBottom:10}} placeholder='Email' />
-     
-      <TextInput style={{width:'70%',height:50, paddingHorizontal:5,  borderWidth:2, borderBlockColor:"black", borderRadius:15, marginBottom:10}} placeholder='Password' />
-      <Button 
-       title='login'
-       > </Button>
 
-
-       <View style={{
-        width:'70%', height:50,paddingLeft:10,justifyContent:"center", borderWidth:2, borderBlockColor:'black', borderRadius:15, marginTop:60
-       }}> 
-       <Text>google authorization</Text>
-       </View>
-       <View style={{
-        width:'70%', height:50,paddingLeft:10,justifyContent:"center", borderWidth:2, borderBlockColor:'black', borderRadius:15, marginTop:10
-       }}> 
-       <Text>Facebook authorization</Text>
-       </View>
-    </View>
-  )
-}
 
 
 export default Profile
