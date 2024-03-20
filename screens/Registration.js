@@ -1,5 +1,7 @@
 import { View, Text, Button, TextInput, TouchableHighlight, SafeAreaView } from 'react-native'
 import React, { useEffect, useState } from 'react'
+import axios from "axios"
+import { get } from 'react-native/Libraries/TurboModule/TurboModuleRegistry'
 
 const Registration = ({loginOrRegist}) => {
   const [isLoading, setIsloading]=useState(true)
@@ -10,32 +12,88 @@ const Registration = ({loginOrRegist}) => {
   const[email, setEmail]=useState('')
   const[password, setPassword]=useState('')
   const [isRegistring, setIsRegistring]=useState(false)
+  const createUser = async () => {
+    setIsRegistring(true);
+  
+    try {
+      const response = await fetch(`http://localhost:3000/users`, {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ 
+          firstname: firstname,
+          lastname: lastname,
+          email: email,
+          password: password
+        })
+      });
+  
+      const responseData = await response.text(); // Get response as text
+      console.log(responseData); // Log the response data
+  
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+  
+      const data = JSON.parse(responseData); // Parse response as JSON
+      console.log(data); // Log the parsed data
+  
+      setIsRegistring(false);
+    } catch (error) {
+      console.error('Error creating user:', error.message);
+      setIsRegistring(false);
+    }
+  };
+  
+  
+  // useEffect(()=>{
+  //   const getusers= async()=>{
+  //     const {data}=await axios.get("http://localhost:3000/users")
+  //   console.log(data)
+  //   }
+  //   getusers();
+  // },[])
+  
+
+  // const createUser =  () => {
+  //   try {
+  //     setIsRegistring(true);
+  //     const response =  fetch("http://localhost:3000/users", {
+  //       method: 'post',
+  //       headers: {
+  //         "Content-Type": "application/json"
+  //       },
+  //       body: JSON.stringify({
+  //         firstname: firstname,
+  //         lastname: lastname,
+  //         email: email,
+  //         password: password
+  //       })
+  //     });
+  
+  //     if (!response.ok) {
+  //       throw new Error(`HTTP error! Status: ${response.status}`);
+  //     }
+  
+  // const newUser =  response.json();
+  // setUserInfo([newUser, ...userInfo]);
+  // setFirstname('');
+  // setLastname('');
+  // setEmail('');
+  // setPassword('');
+  // setIsRegistring(false);
+  // console.log(response);
 
 
-  const createUser=async()=>{
-    setIsRegistring(true)
-    const response= await fetch("https://localhost:3000",{
-      method:'post',
-      headers:{
-        "content-Type" : "applicarion/json"
-      },
-      body:JSON.stringify({
-        id:"",
-        firstname:firstname,
-        lastname:lastname,
-        email:email,
-        password:password
-      })
-    })
-    const newUser= await response.json()
-    setUserInfo([newUser, ...userInfo])
-    setFirstname(''),
-    setLastname(''),
-    setEmail(''),
-    setPassword('')
-    setIsRegistring(false)
-  }
- 
+      
+
+  //    } catch (error) {
+  //      console.error('Error creating user:', error.message);
+  //      setIsRegistring(false);
+  //    }
+  // };
+  
   return (
     <SafeAreaView style={{ flex:1, alignItems:"center"}}>
       <Text style={{color:'black', fontSize:20}}>Registration</Text>
@@ -76,6 +134,7 @@ const Registration = ({loginOrRegist}) => {
 
       </View>
     </SafeAreaView>
+    
   )
 }
 
